@@ -19,6 +19,8 @@ This work provides an architecture that incorporates depth and tactile informati
 
 We created a database of training examples, completions of those examples, and grasps planned on the objects. Link coming soon. 
 
+<hr />
+
 ### Video
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/R98JEqEps_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

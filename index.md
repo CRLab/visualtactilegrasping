@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# Abstract
 
-You can use the [editor on GitHub](https://github.com/CRLab/visualtactilegrasping.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This work provides an architecture that incorporates depth and tactile information to create rich and accurate 3D models useful for robotic manipulation tasks. This is accomplished through the use of a 3D convolutional neural network (CNN).  Offline, the network is provided with both depth and tactile information and trained to predict the object's geometry, thus filling in regions of occlusion.  At runtime, the network is provided a partial view of an object and tactile information is acquired to augment the captured depth information. The network can then reason about the object's geometry by utilizing both the collected tactile and depth information. We demonstrate that even small amounts of additional tactile information can be incredibly helpful in reasoning about object geometry. This is particularly true when information from depth alone fails to produce an accurate geometric prediction.  Our method is benchmarked against and outperforms other visual-tactile approaches to general geometric reasoning.  We also provide experimental results comparing grasping success with our method.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<img src="_images/TrainingDataFull" alt="Training Data Example" class="inline"/>
 
-### Markdown
+### Completion Examples
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We created a database of training examples, completions of those examples, and grasps planned on the objects. Link coming soon. 
 
-```markdown
-Syntax highlighted code block
+### Video
 
-# Header 1
-## Header 2
-### Header 3
+<iframe width="854" height="480" src="https://www.youtube.com/embed/R98JEqEps_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-- Bulleted
-- List
+### Downloads
 
-1. Numbered
-2. List
+#### Source code + Trained Model (Keras 2.0)
 
-**Bold** and _Italic_ and `Code` text
+- ROS workspace with setup instructions: Coming soon
+- Trained Model: Coming soon
 
-[Link](url) and ![Image](src)
-```
+#### Training data
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- 726 pointclouds for each of 590 objects, as well as the 428,340 corresponding 40<sup>3</sup> aligned x,y training example pairs from the Grasp Database: Coming soon
+- 726 pointclouds for 18 objects, as well as the corresponding 40<sup>3</sup> aligned x,y training example pairs from the YCB Dataset: Coming soon
+- Combined grasp_database and ycb as binvox files rather than .pcd. Much smaller download: Coming Soon
 
-### Jekyll Themes
+#### Ground Truth Meshes
+The ground truth meshes are not ours to distribute. To get them, please register at: 
+- Grasp Database: [http://grasp-database.dkappler.de/](http://grasp-database.dkappler.de/)
+- YCB Database: [http://rll.eecs.berkeley.edu/ycb/](http://rll.eecs.berkeley.edu/ycb/)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CRLab/visualtactilegrasping.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Citation
+This work was submitted to IROS 2018. [submission.pdf](_files/submission.pdf)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

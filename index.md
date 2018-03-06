@@ -11,7 +11,7 @@
 
 This work provides an architecture that incorporates depth and tactile information to create rich and accurate 3D models useful for robotic manipulation tasks. This is accomplished through the use of a 3D convolutional neural network (CNN).  Offline, the network is provided with both depth and tactile information and trained to predict the object's geometry, thus filling in regions of occlusion.  At runtime, the network is provided a partial view of an object and tactile information is acquired to augment the captured depth information. The network can then reason about the object's geometry by utilizing both the collected tactile and depth information. We demonstrate that even small amounts of additional tactile information can be incredibly helpful in reasoning about object geometry. This is particularly true when information from depth alone fails to produce an accurate geometric prediction.  Our method is benchmarked against and outperforms other visual-tactile approaches to general geometric reasoning.  We also provide experimental results comparing grasping success with our method.
 
-<img src="_images/TrainingDataFull" alt="Training Data Example" class="inline"/>
+<img src="https://cdn.rawgit.com/CRLab/visualtactilegrasping/tree/master/_images/TrainingDataFull.png" alt="Training Data Example" class="inline"/>
 
 <hr />
 
@@ -48,5 +48,5 @@ The ground truth meshes are not ours to distribute. To get them, please register
 <hr />
 
 ### Citation
-This work was submitted to IROS 2018. [submission.pdf](_files/submission.pdf)
+This work was submitted to IROS 2018. [submission.pdf](https://cdn.rawgit.com/CRLab/visualtactilegrasping/tree/master/_files/submission.pdf)
 

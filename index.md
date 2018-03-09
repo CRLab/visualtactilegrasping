@@ -36,9 +36,9 @@ We created a database of training examples, completions of those examples, and g
 
 #### Training data
 
-- 726 pointclouds for each of 590 objects, as well as the 428,340 corresponding 40<sup>3</sup> aligned x,y training example pairs from the Grasp Database: Coming soon
-- 726 pointclouds for 18 objects, as well as the corresponding 40<sup>3</sup> aligned x,y training example pairs from the YCB Dataset: Coming soon
-- Combined grasp_database and ycb as binvox files rather than .pcd. Much smaller download: Coming Soon
+To acquire the datasets, please email me at 'davidwatkins at cs dot columbia dot edu'. 
+- 726 pointclouds for each of 608 objects, as well as the 428,340 corresponding 40<sup>3</sup> aligned x,y training example pairs from the Grasp and YCB Databases.
+- Combined grasp_database and ycb as binvox files rather than .pcd. Much smaller download. 
 
 #### Ground Truth Meshes
 The ground truth meshes are not ours to distribute. To get them, please register at: 

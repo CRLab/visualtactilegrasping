@@ -31,8 +31,8 @@ We created a database of training examples, completions of those examples, and g
 
 #### Source code + Trained Model (Keras 2.0)
 
-- ROS workspace with setup instructions: Coming soon
-- Trained Model: Coming soon
+- ROS workspace with setup instructions: [https://github.com/CRLab/pc_scene_completion_ws](https://github.com/CRLab/pc_scene_completion_ws)
+- Trained Model: [here](http://mainland.cs.columbia.edu:8001/model.tar.gz)
 
 #### Training data
 

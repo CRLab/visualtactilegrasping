@@ -63,21 +63,21 @@ keys: key
     </div>
 </div>
 
-<script src="{{ '/assets/js/three.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ '/assets/js/OrbitControls.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ '/assets/js/PLYLoader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ '/assets/js/PCDLoader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ '/assets/js/Detector.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ '/assets/js/viewer.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/three.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/OrbitControls.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/PLYLoader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/PCDLoader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/Detector.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/viewer.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 
 <script>
-    addPointCloudViewer('/assets/data/{{ page_completion.key }}/depth_cloud_cf.pcd',
-        '/assets/data/{{ page_completion.key }}/tactile_cloud_cf.pcd',
+    addPointCloudViewer('https://crlab.cs.columbia.edu/visualtactilegrasping/assets/data/{{ page_completion.key }}/depth_cloud_cf.pcd',
+        'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/data/{{ page_completion.key }}/tactile_cloud_cf.pcd',
         'cloud_container');
 
-    addPLYViewer( '/assets/data/{{ page_completion.key }}/gt.ply', 'ground_truth_container');
-    addPLYViewer( '/assets/data/{{ page_completion.key }}/partial.ply', 'partial_container');
-    addPLYViewer( '/assets/data/{{ page_completion.key }}/completion.ply', 'completion_container');
+    addPLYViewer( 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/data/{{ page_completion.key }}/gt.ply', 'ground_truth_container');
+    addPLYViewer( 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/data/{{ page_completion.key }}/partial.ply', 'partial_container');
+    addPLYViewer( 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/data/{{ page_completion.key }}/completion.ply', 'completion_container');
 
 </script>

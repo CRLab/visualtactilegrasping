@@ -21,7 +21,7 @@ This work provides an architecture that incorporates depth and tactile informati
 
 ### Completion Examples
 
-We created a database of training examples and completions of those examples. See completions [here]({{ site.url }}/completions_view/). 
+We created a database of training examples and completions of those examples. See completions [here](https://crlab.cs.columbia.edu/visualtactilegrasping/completions_view/). 
 
 <hr />
 

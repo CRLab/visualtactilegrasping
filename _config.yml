@@ -1,3 +1,25 @@
-theme: jekyll-theme-cayman
 title: Multi-Modal Geometric Learning for Grasping and Manipulation
-description: 
+description:
+google_analytics:
+theme: jekyll-theme-cayman
+
+github:
+  is_project_page: true
+  repository_url: https://github.com/CRLab/visualtactilegrasping
+  owner_url: https://crlab.cs.columbia.edu
+  owner_name: CRLab
+  repository_name: "This site"
+
+# Collections
+collections:
+  completions:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "completions"
+    values:
+      layout: "completion_view"
+      permalink: /completions_view/:title/

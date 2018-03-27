@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta charset="UTF-8">
+
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap-grid.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap-reboot.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+    <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    <a href="{{ site.url }}" class="btn">Back to main page</a>
+</section>
+
+{% assign datasplits = site.completions | map: "datasplit" | uniq %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar sidebar-wrapper">
+            <div class="sidebar-sticky" style="overflow-y: auto;">
+
+            {% for datasplit in datasplits %}
+
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>{{ datasplit }}</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                        <span data-feather="plus-circle"></span>
+                    </a>
+                </h6>
+
+                <ul class="nav flex-column">
+                    {% for completion in site.completions %}
+                        {% if completion.datasplit == datasplit %}
+                            <li class="nav-item">
+                        <a class="nav-link active" href="/completions_view/{{ completion.key }}">
+                            <span data-feather="home"></span>
+                            {{ completion.mesh_name }} <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+
+            {% endfor %}
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"><div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+          {{ content }}
+        </main>
+    </div>
+</div>
+
+<section class="main-content">
+    <footer class="site-footer">
+        {% if site.github.is_project_page %}
+        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+    </footer>
+</section>
+
+{% if site.google_analytics %}
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+</script>
+{% endif %}
+
+<script src="{{ '/assets/js/jquery.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/bootstrap.bundle.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/bootstrap.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+</body>
+</html>

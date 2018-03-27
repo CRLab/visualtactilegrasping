@@ -1,0 +1,83 @@
+---
+layout: completions
+keys: key
+---
+
+{% for completion in site.completions %}
+{% if completion.title == page.title %}
+{% assign page_completion = completion %}
+{% endif %}
+{% endfor %}
+
+<h2>{{ page_completion.mesh_name }}</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6" style="border-width: 3px; border: 3px;">
+            <div class="row">
+                <h4>Point Cloud (Depth cloud in red, Tactile cloud in blue)</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="border-width: 3px; border: 3px;">
+                    <canvas width="500" height="500" style="width: 100%; height: auto;" id="cloud_container"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" style="border-width: 3px; border: 3px;">
+            <div class="row">
+                <h4>Partial View</h4>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="border-width: 3px; border: 3px;">
+                    <canvas width="500" height="500" style="width: 100%; height: auto;" id="partial_container"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" style="border-width: 3px; border: 3px;">
+            <div class="row">
+
+                <h4>Completion</h4>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="border-width: 3px; border: 3px;">
+
+                    <canvas width="500" height="500" style="width: 100%; height: auto;" id="completion_container"></canvas>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6" style="border-width: 3px; border: 3px;">
+            <div class="row">
+
+                <h4>Ground Truth</h4>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="border-width: 3px; border: 3px;">
+                    <canvas width="500" height="500" style="width: 100%; height: auto;" id="ground_truth_container"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/three.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/OrbitControls.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/PLYLoader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/PCDLoader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/Detector.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/viewer.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+
+<script>
+    addPointCloudViewer('/assets/data/{{ page_completion.key }}/depth_cloud_cf.pcd',
+        '/assets/data/{{ page_completion.key }}/tactile_cloud_cf.pcd',
+        'cloud_container');
+
+    addPLYViewer( '/assets/data/{{ page_completion.key }}/gt.ply', 'ground_truth_container');
+    addPLYViewer( '/assets/data/{{ page_completion.key }}/partial.ply', 'partial_container');
+    addPLYViewer( '/assets/data/{{ page_completion.key }}/completion.ply', 'completion_container');
+
+</script>

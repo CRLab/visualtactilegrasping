@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <center>
   <!-- <h1>Multi-Modal Geometric Learning for Grasping and Manipulation</h1> -->
   <p><a target="_blank" href="http://www.cs.columbia.edu/~jvarley/">Jacob Varley<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, <a target="_blank" href="http://davidwa.tkins.me">David Watkins-Valls<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, and <a target="_blank" href="http://www.cs.columbia.edu/~allen/">Peter Allen<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a><br>
@@ -11,13 +15,13 @@
 
 This work provides an architecture that incorporates depth and tactile information to create rich and accurate 3D models useful for robotic manipulation tasks. This is accomplished through the use of a 3D convolutional neural network (CNN).  Offline, the network is provided with both depth and tactile information and trained to predict the object's geometry, thus filling in regions of occlusion.  At runtime, the network is provided a partial view of an object and tactile information is acquired to augment the captured depth information. The network can then reason about the object's geometry by utilizing both the collected tactile and depth information. We demonstrate that even small amounts of additional tactile information can be incredibly helpful in reasoning about object geometry. This is particularly true when information from depth alone fails to produce an accurate geometric prediction.  Our method is benchmarked against and outperforms other visual-tactile approaches to general geometric reasoning.  We also provide experimental results comparing grasping success with our method.
 
-<img src="https://rawcdn.githack.com/CRLab/visualtactilegrasping/master/_images/TrainingDataFull.png" alt="Training Data Example" class="inline"/>
+<img src="{{ '/assets/images/TrainingDataFull.png?v=' | append: site.github.build_revision | relative_url }}" alt="Training Data Example" class="inline"/>
 
 <hr />
 
 ### Completion Examples
 
-We created a database of training examples, completions of those examples, and grasps planned on the objects. Link coming soon. 
+We created a database of training examples and completions of those examples. See completions [here]({{ site.url }}/completions_view/). 
 
 <hr />
 

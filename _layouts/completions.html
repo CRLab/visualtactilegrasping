@@ -6,7 +6,7 @@
     {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap-grid.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -16,7 +16,7 @@
 <section class="page-header">
     <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-    <a href="https://crlab.cs.columbia.edu/visualtactilegrasping" class="btn">Back to main page</a>
+    <a href="http://crlab.cs.columbia.edu/visualtactilegrasping" class="btn">Back to main page</a>
 </section>
 
 {% assign datasplits = site.completions | map: "datasplit" | uniq %}
@@ -40,7 +40,7 @@
                     {% for completion in site.completions %}
                         {% if completion.datasplit == datasplit %}
                             <li class="nav-item">
-                        <a class="nav-link active" href="https://crlab.cs.columbia.edu/visualtactilegrasping/completions_view/{{ completion.key }}">
+                        <a class="nav-link active" href="http://crlab.cs.columbia.edu/visualtactilegrasping/completions_view/{{ completion.key }}">
                             <span data-feather="home"></span>
                             {{ completion.mesh_name }} <span class="sr-only">(current)</span>
                         </a>
@@ -79,9 +79,9 @@
 </script>
 {% endif %}
 
-<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/jquery.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/bootstrap.bundle.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-<script src="{{ 'https://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/bootstrap.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'http://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/jquery.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'http://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/bootstrap.bundle.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ 'http://crlab.cs.columbia.edu/visualtactilegrasping/assets/js/bootstrap.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 </body>
 </html>

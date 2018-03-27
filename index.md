@@ -17,13 +17,13 @@ This work provides an architecture that incorporates depth and tactile informati
 
 ### Completion Examples
 
-We created a database of training examples and completions of those examples. See completions [here](https://crlab.cs.columbia.edu/visualtactilegrasping/completions_view/). 
+We created a database of training examples and completions of those examples. See completions [here](http://crlab.cs.columbia.edu/visualtactilegrasping/completions_view/). 
 
 <hr />
 
 ### Video
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/R98JEqEps_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="854" height="480" src="http://www.youtube.com/embed/R98JEqEps_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <hr />
 
@@ -31,7 +31,7 @@ We created a database of training examples and completions of those examples. Se
 
 #### Source code + Trained Model (Keras 2.0)
 
-- ROS workspace with setup instructions: [https://github.com/CRLab/pc_scene_completion_ws](https://github.com/CRLab/pc_scene_completion_ws)
+- ROS workspace with setup instructions: [http://github.com/CRLab/pc_scene_completion_ws](http://github.com/CRLab/pc_scene_completion_ws)
 - Trained Model: [here](http://mainland.cs.columbia.edu:8001/model.tar.gz)
 
 #### Training data
@@ -48,5 +48,5 @@ The ground truth meshes are not ours to distribute. To get them, please register
 <hr />
 
 ### Citation
-This work was submitted to IROS 2018. Arxiv link [here](https://arxiv.org/abs/1803.07671)
+This work was submitted to IROS 2018. Arxiv link [here](http://arxiv.org/abs/1803.07671)
 

@@ -48,5 +48,5 @@ The ground truth meshes are not ours to distribute. To get them, please register
 <hr />
 
 ### Citation
-This work was submitted to IROS 2018. Arxiv link [here](http://arxiv.org/abs/1803.07671)
+Arxiv link [here](http://arxiv.org/abs/1803.07671)
 

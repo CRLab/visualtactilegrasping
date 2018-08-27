@@ -36,12 +36,11 @@ We created a database of training examples and completions of those examples. Se
 #### Source code + Trained Model (Keras 2.0)
 
 - ROS workspace with setup instructions: [https://github.com/CRLab/pc_scene_completion_ws](https://github.com/CRLab/pc_scene_completion_ws)
-- Trained Model: [here](http://mainland.cs.columbia.edu:8001/model.tar.gz)
+- Trained Model: [here](https://drive.google.com/file/d/158XCw3Me8X1dtHNT3ASkb9qRpNfO0vLt/view?usp=sharing)
 
 #### Training data
 
-- 726 pointclouds for each of 608 objects, as well as the 428,340 corresponding 40<sup>3</sup> aligned x,y training example pairs from the Grasp and YCB Databases. [here](http://mainland.cs.columbia.edu:8001/aligned_training_examples.tar.gz)
-- Combined grasp_database and ycb as binvox files rather than .pcd. Much smaller download. [here](http://mainland.cs.columbia.edu:8001/binvox_training_examples.tar.gz)
+- 726 pointclouds for each of 608 objects, as well as the 428,340 corresponding 40<sup>3</sup> aligned x,y training example pairs from the Grasp and YCB Databases. [here](https://drive.google.com/open?id=1NJX6wSDQBHkJZwX4l-JyfZyatb6bsePX)
 
 
 #### Ground Truth Meshes

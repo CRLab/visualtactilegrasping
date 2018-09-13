@@ -27,7 +27,7 @@ We created a database of training examples and completions of those examples. Se
 
 ### Video
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/R98JEqEps_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mz3gVnn18PU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <hr />
 

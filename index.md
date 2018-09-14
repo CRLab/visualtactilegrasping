@@ -1,6 +1,6 @@
 <center>
   <!-- <h1>Multi-Modal Geometric Learning for Grasping and Manipulation</h1> -->
-  <p><a target="_blank" href="http://www.cs.columbia.edu/~jvarley/">Jacob Varley<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, <a target="_blank" href="http://davidwa.tkins.me">David Watkins-Valls<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, and <a target="_blank" href="http://www.cs.columbia.edu/~allen/">Peter Allen<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a><br>
+  <p><a target="_blank" href="http://davidwa.tkins.me">David Watkins-Valls<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, <a target="_blank" href="http://www.cs.columbia.edu/~jvarley/">Jacob Varley<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, and <a target="_blank" href="http://www.cs.columbia.edu/~allen/">Peter Allen<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a><br>
   </p><p>
   </p><p style="color:#aaa; margin-bottom: 20px">Columbia Robotics Lab</p>
 </center>
@@ -23,7 +23,7 @@ We created a database of training examples and completions of those examples. Se
 
 ### Video
 
-<iframe width="854" height="480" src="http://www.youtube.com/embed/R98JEqEps_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/mz3gVnn18PU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <hr />
 

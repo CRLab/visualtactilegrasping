@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+ 
 <center>
   <!-- <h1>Multi-Modal Geometric Learning for Grasping and Manipulation</h1> -->
   <p><a target="_blank" href="http://davidwa.tkins.me">David Watkins-Valls<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, <a target="_blank" href="http://www.cs.columbia.edu/~jvarley/">Jacob Varley<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>, and <a target="_blank" href="http://www.cs.columbia.edu/~allen/">Peter Allen<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a><br>

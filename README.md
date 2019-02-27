@@ -51,5 +51,5 @@ The ground truth meshes are not ours to distribute. To get them, please register
 <hr />
 
 ### Citation
-This work was submitted to ICRA 2018. Arxiv link [here](https://arxiv.org/abs/1803.07671)
+This work was accept by ICRA 2019. Arxiv link [here](https://arxiv.org/abs/1803.07671)
 
